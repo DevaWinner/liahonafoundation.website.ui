@@ -496,7 +496,7 @@
 
 .question .icon i {
 	display: inline-block;
-	background: #3bcf93;
+	background: var(--primary);
 	height: 50px;
 	width: 50px;
 	text-align: center;
@@ -515,7 +515,7 @@
 	content: "";
 	height: 80px;
 	width: 80px;
-	background: #3bcf93;
+	background: var(--primary);
 	z-index: -1;
 	border-radius: 50%;
 	opacity: 0.4;

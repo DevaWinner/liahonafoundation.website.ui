@@ -178,7 +178,7 @@
 	padding-top: 12rem;
 	padding-bottom: 6rem;
 	background: linear-gradient(rgba(0, 29, 35, 0.8), rgba(0, 29, 35, 0.8)),
-		url(../img/carousel-1.jpg) center center no-repeat;
+		url(../img/black-girl-summer-city-with-laptop.jpg) center center no-repeat;
 	background-size: cover;
 }
 
@@ -531,18 +531,41 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(209, 208, 207, 0.055);
+	background: rgba(209, 208, 207, 0.37);
 	z-index: 1;
 	transition: 0.5s;
 }
 
-.overlay h6 {
+.overlay h3 {
 	position: absolute;
-	top: 90%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	background-color: #24232380;
+	top: 70%;
+	width: 100%;
 	color: #fff;
-	font-size: 16px;
+	/* font-size: 25px; */
 	font-weight: 700;
 	z-index: 2;
+}
+
+.counter i {
+	color: var(--primary);
+}
+
+.counter-item h4 {
+	color: var(--dark) !important;
+}
+
+.carousel-img-container.one {
+	background: url(../img/black-girl-summer-city-with-laptop.jpg);
+}
+
+.carousel-img-container.two {
+	background: url(../img/african-scholarship-hub_3.jpg);
+}
+
+.carousel-img-container.one,
+.carousel-img-container.two {
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
 }

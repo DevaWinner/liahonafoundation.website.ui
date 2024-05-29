@@ -569,3 +569,8 @@
 	background-position: center;
 	background-size: cover;
 }
+
+.form-label {
+	color: var(--dark);
+	font-weight: 500;
+}

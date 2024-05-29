@@ -1,15 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<title>Apply - Apply for our Laptop/Tuition Support</title>
-		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
-		<meta content="" name="keywords" />
-		<meta content="" name="description" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Apply for Laptop and Tuition Assistance | Liahona Foundation</title>
+		<meta
+			name="description"
+			content="Apply for laptop and tuition assistance through Liahona Foundation. We provide essential resources to help students Nigeria achieve their educational goals."
+		/>
+		<meta
+			name="keywords"
+			content="apply for assistance, laptop assistance, tuition assistance, student support, education aid, nonprofit, African students, educational resources"
+		/>
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Liahona Foundation" />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://liahonafoundation.org/apply" />
+		<meta
+			property="og:title"
+			content="Apply for Laptop and Tuition Assistance | Liahona Foundation"
+		/>
+		<meta
+			property="og:description"
+			content="Apply for laptop and tuition assistance through Liahona Foundation. We provide essential resources to help students Nigeria achieve their educational goals."
+		/>
+		<meta
+			property="og:image"
+			content="https://winner-host.imgix.net/liahona-fondation/img/logo-single.svg"
+		/>
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta
+			property="twitter:url"
+			content="https://liahonafoundation.org/apply"
+		/>
+		<meta
+			property="twitter:title"
+			content="Apply for Laptop and Tuition Assistance | Liahona Foundation"
+		/>
+		<meta
+			property="twitter:description"
+			content="Apply for laptop and tuition assistance through Liahona Foundation. We provide essential resources to help students Nigeria achieve their educational goals."
+		/>
+		<meta
+			property="twitter:image"
+			content="https://winner-host.imgix.net/liahona-fondation/img/logo-single.svg"
+		/>
 
 		<!-- Favicon -->
 		<link
-			href="https://cdn.jsdelivr.net/gh/DevaWinner/static@main/liahona-foundation/img/logo-single.svg"
+			href="https://winner-host.imgix.net/liahona-fondation/img/logo-single.svg"
 			rel="icon"
 		/>
 
@@ -40,6 +83,38 @@
 
 		<!-- Template Stylesheet -->
 		<link href="css/style.css" rel="stylesheet" />
+
+		<!-- Schema Markup -->
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "WebPage",
+				"name": "Apply for Assistance",
+				"url": "https://liahonafoundation.org/apply",
+				"description": "Apply for laptop and tuition assistance through Liahona Foundation. We provide essential resources to help students Nigeria achieve their educational goals.",
+				"publisher": {
+					"@type": "Organization",
+					"name": "Liahona Foundation",
+					"logo": {
+						"@type": "ImageObject",
+						"url": "https://winner-host.imgix.net/liahona-fondation/img/logo-single.svg"
+					}
+				},
+				"potentialAction": {
+					"@type": "ApplyAction",
+					"target": {
+						"@type": "EntryPoint",
+						"urlTemplate": "https://liahonafoundation.org/apply",
+						"inLanguage": "en-US",
+						"actionPlatform": [
+							"http://schema.org/DesktopWebPlatform",
+							"http://schema.org/MobileWebPlatform"
+						]
+					},
+					"name": "Apply for Assistance"
+				}
+			}
+		</script>
 	</head>
 
 	<body>
@@ -148,15 +223,18 @@
 		>
 			<div class="container text-center">
 				<h1 class="display-4 text-white animated slideInDown mb-4">
-					Apply for Support
+					Application Form
 				</h1>
 				<nav aria-label="breadcrumb animated slideInDown">
 					<ol class="breadcrumb justify-content-center mb-0">
 						<li class="breadcrumb-item">
 							<a class="text-white" href="./index.html">Home</a>
 						</li>
+						<li class="breadcrumb-item">
+							<a class="text-white" href="./apply.html">Apply</a>
+						</li>
 						<li class="breadcrumb-item text-primary active" aria-current="page">
-							Apply
+							Application Form
 						</li>
 					</ol>
 				</nav>
@@ -165,7 +243,7 @@
 		<!-- Page Header End -->
 
 		<main>
-			<!-- Testimonial Start -->
+			<!-- Application Form Start -->
 			<section class="container-xxl py-5">
 				<div class="container">
 					<div
@@ -176,76 +254,171 @@
 						<div
 							class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
 						>
-							Apply
+							Application Form
 						</div>
-						<h1 class="display-6 mb-5">Apply For Our Laptop/Tuition Support</h1>
+						<h1 class="display-6 mb-5">
+							Apply for Laptop and Tuition Assistance
+						</h1>
 					</div>
-					<p class="mb-4">
-						We are always ready to answer your questions. There are many ways to
-						contact us. You may drop us a line, give us a call or send an email,
-						choose what suits you the most.
-					</p>
-					<form>
-						<div class="row g-3">
-							<div class="col-md-6">
-								<div class="form-floating">
-									<input
-										type="text"
-										class="form-control"
-										id="name"
-										placeholder="Your Name"
-									/>
-									<label for="name">Your Name</label>
-								</div>
+				</div>
+				<div class="container mt-5">
+					<form
+						action="application-form.html"
+						method="post"
+						enctype="multipart/form-data"
+					>
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<label for="firstName" class="form-label">First Name</label>
+								<input
+									type="text"
+									class="form-control"
+									id="firstName"
+									name="firstName"
+									required
+								/>
 							</div>
-							<div class="col-md-6">
-								<div class="form-floating">
-									<input
-										type="email"
-										class="form-control"
-										id="email"
-										placeholder="Your Email"
-									/>
-									<label for="email">Your Email</label>
-								</div>
-							</div>
-							<div class="col-12">
-								<div class="form-floating">
-									<input
-										type="text"
-										class="form-control"
-										id="subject"
-										placeholder="Subject"
-									/>
-									<label for="subject">Subject</label>
-								</div>
-							</div>
-							<div class="col-12">
-								<div class="form-floating">
-									<textarea
-										class="form-control"
-										placeholder="Leave a message here"
-										id="message"
-										style="height: 100px"
-									></textarea>
-									<label for="message">Message</label>
-								</div>
-							</div>
-							<div class="col-12">
-								<button class="btn btn-primary py-2 px-3 me-3">
-									Send Message
-									<div
-										class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2"
-									>
-										<i class="fa fa-arrow-right"></i>
-									</div>
-								</button>
+							<div class="col-md-6 mb-3">
+								<label for="lastName" class="form-label">Last Name</label>
+								<input
+									type="text"
+									class="form-control"
+									id="lastName"
+									name="lastName"
+									required
+								/>
 							</div>
 						</div>
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<label for="email" class="form-label">Email Address</label>
+								<input
+									type="email"
+									class="form-control"
+									id="email"
+									name="email"
+									required
+								/>
+							</div>
+							<div class="col-md-6 mb-3">
+								<label for="whatsappNumber" class="form-label"
+									>WhatsApp Number</label
+								>
+								<input
+									type="tel"
+									class="form-control"
+									id="whatsappNumber"
+									name="whatsappNumber"
+									required
+								/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<label for="stateOfResidence" class="form-label"
+									>State of Residence in Nigeria</label
+								>
+								<input
+									type="text"
+									class="form-control"
+									id="stateOfResidence"
+									name="stateOfResidence"
+									required
+								/>
+							</div>
+							<div class="col-md-6 mb-3">
+								<label for="wardName" class="form-label">Ward Name</label>
+								<input
+									type="text"
+									class="form-control"
+									id="wardName"
+									name="wardName"
+									required
+								/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<label for="stakeName" class="form-label">Stake Name</label>
+								<input
+									type="text"
+									class="form-control"
+									id="stakeName"
+									name="stakeName"
+									required
+								/>
+							</div>
+							<div class="col-md-6 mb-3">
+								<label for="studentInfoVideo" class="form-label"
+									>Student Information Video</label
+								>
+								<input
+									type="file"
+									class="form-control"
+									id="studentInfoVideo"
+									name="studentInfoVideo"
+									accept="video/*"
+									required
+								/>
+								<small class="form-text text-muted"
+									>Tell us about yourself and your family background using a
+									3-minute video.</small
+								>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<label for="educationGoalVideo" class="form-label"
+									>Education Goal Video</label
+								>
+								<input
+									type="file"
+									class="form-control"
+									id="educationGoalVideo"
+									name="educationGoalVideo"
+									accept="video/*"
+									required
+								/>
+								<small class="form-text text-muted"
+									>Tell us about your educational goals and how this laptop can
+									enable you to achieve them using a 3-minute video.</small
+								>
+							</div>
+							<div class="col-md-6 mb-3">
+								<label for="endorsement" class="form-label"
+									>Bishop/Branch President Endorsement</label
+								>
+								<input
+									type="file"
+									class="form-control"
+									id="endorsement"
+									name="endorsement"
+									required
+								/>
+								<small class="form-text text-muted"
+									>Collect an endorsement from your bishop or branch president,
+									with their contact information describing you and your
+									commitment to PATHWAY, BYU-I, or ENSIGN College.</small
+								>
+							</div>
+						</div>
+						<div class="form-check mb-3">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								value=""
+								id="disclaimerCheck"
+								required
+							/>
+							<label class="form-check-label" for="disclaimerCheck">
+								I have read and accept the disclaimer.
+							</label>
+						</div>
+						<button type="submit" class="btn btn-primary">Apply</button>
 					</form>
 				</div>
 			</section>
-			<!-- Testimonial End -->
+			<!-- Application Form End -->
 		</main>
 
 		<!-- Footer Start -->

@@ -338,7 +338,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-6 mb-3">
+							<div class="col-md-4 mb-3">
 								<label for="stakeName" class="form-label">Stake Name</label>
 								<input
 									type="text"
@@ -348,7 +348,23 @@
 									required
 								/>
 							</div>
-							<div class="col-md-6 mb-3">
+							<!-- What are you applying for? option of laptop and Tuition Assistance -->
+							<div class="col-md-4 mb-3">
+								<label for="applicationType" class="form-label"
+									>What are you applying for?</label
+								>
+								<select
+									class="form-select"
+									id="applicationType"
+									name="applicationType"
+									required
+								>
+									<option value="">Select an option</option>
+									<option value="laptop">Laptop Assistance</option>
+									<option value="tuition">Tuition Assistance</option>
+								</select>
+							</div>
+							<div class="col-md-4 mb-3">
 								<label for="studentInfoVideo" class="form-label"
 									>Student Information Video</label
 								>
@@ -411,7 +427,7 @@
 								required
 							/>
 							<label class="form-check-label" for="disclaimerCheck">
-								I have read and accept the disclaimer.
+								I have read and accept the terms of this application.
 							</label>
 						</div>
 						<button type="submit" class="btn btn-primary">Apply</button>

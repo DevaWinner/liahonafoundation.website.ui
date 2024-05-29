@@ -267,7 +267,7 @@
 						method="post"
 						enctype="multipart/form-data"
 					>
-						<div class="row">
+						<div class="row mt-0 mt-md-3">
 							<div class="col-md-6 mb-3">
 								<label for="firstName" class="form-label">First Name</label>
 								<input
@@ -289,8 +289,8 @@
 								/>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-md-6 mb-3">
+						<div class="row mt-0 mt-md-3">
+							<div class="col-md-4 mb-3">
 								<label for="email" class="form-label">Email Address</label>
 								<input
 									type="email"
@@ -300,7 +300,7 @@
 									required
 								/>
 							</div>
-							<div class="col-md-6 mb-3">
+							<div class="col-md-4 mb-3">
 								<label for="whatsappNumber" class="form-label"
 									>WhatsApp Number</label
 								>
@@ -312,8 +312,23 @@
 									required
 								/>
 							</div>
+							<div class="col-md-4 mb-3">
+								<label for="applicationType" class="form-label"
+									>What are you applying for?</label
+								>
+								<select
+									class="form-select"
+									id="applicationType"
+									name="applicationType"
+									required
+								>
+									<option value="">Select an option</option>
+									<option value="laptop">Laptop Assistance</option>
+									<option value="tuition">Tuition Assistance</option>
+								</select>
+							</div>
 						</div>
-						<div class="row">
+						<div class="row mt-0 mt-md-3">
 							<div class="col-md-6 mb-3">
 								<label for="stateOfResidence" class="form-label"
 									>State of Residence in Nigeria</label
@@ -337,8 +352,8 @@
 								/>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-md-4 mb-3">
+						<div class="row mt-0 mt-md-3">
+							<div class="col-md-6 mb-3">
 								<label for="stakeName" class="form-label">Stake Name</label>
 								<input
 									type="text"
@@ -348,23 +363,7 @@
 									required
 								/>
 							</div>
-							<!-- What are you applying for? option of laptop and Tuition Assistance -->
-							<div class="col-md-4 mb-3">
-								<label for="applicationType" class="form-label"
-									>What are you applying for?</label
-								>
-								<select
-									class="form-select"
-									id="applicationType"
-									name="applicationType"
-									required
-								>
-									<option value="">Select an option</option>
-									<option value="laptop">Laptop Assistance</option>
-									<option value="tuition">Tuition Assistance</option>
-								</select>
-							</div>
-							<div class="col-md-4 mb-3">
+							<div class="col-md-6 mb-3">
 								<label for="studentInfoVideo" class="form-label"
 									>Student Information Video</label
 								>
@@ -382,7 +381,7 @@
 								>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row mt-0 mt-md-3">
 							<div class="col-md-6 mb-3">
 								<label for="educationGoalVideo" class="form-label"
 									>Education Goal Video</label

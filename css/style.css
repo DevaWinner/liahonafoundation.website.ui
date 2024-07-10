@@ -574,3 +574,18 @@
 	color: var(--dark);
 	font-weight: 500;
 }
+
+@media (max-width: 768px) {
+	img.about-image {
+		width: 100% !important;
+	}
+
+	div.vision {
+    flex-direction: column-reverse;
+	}
+}
+
+.team-item img {
+  width: 190px;
+  height: 200px;
+}

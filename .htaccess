@@ -1,0 +1,29 @@
+Header set Access-Control-Allow-Origin "*"
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Specific rewrite rules for each page
+    RewriteRule ^about$ about.html [L]
+    RewriteRule ^contact$ contact.html [L]
+    RewriteRule ^impact$ impact.html [L]
+    RewriteRule ^apply$ apply.html [L]
+    RewriteRule ^application-form$ application-form.html [L]
+    RewriteRule ^404$ 404.html [L]
+
+    # General rule for index.html
+    RewriteRule ^index\.html$ - [L]
+
+    # Catch-all rule to route all other requests to index.html
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-l
+    RewriteRule . /index.html [L]
+</IfModule>
+
+Options -Indexes
+ErrorDocument 400 /400.shtml
+ErrorDocument 401 /400.shtml
+ErrorDocument 403 /400.shtml
+ErrorDocument 404 /400.shtml
+ErrorDocument 500 /400.shtml

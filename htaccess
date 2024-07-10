@@ -1,0 +1,9 @@
+Header set Access-Control-Allow-Origin "*"
+<IfModule mod_rewrite.c>
+	RewriteEngine On RewriteBase / RewriteRule ^index\.html$ - [L] RewriteCond
+	%{REQUEST_FILENAME} !-f RewriteCond %{REQUEST_FILENAME} !-d RewriteCond
+	%{REQUEST_FILENAME} !-l RewriteRule . /index.html [L]
+</IfModule>
+Options -Indexes ErrorDocument 400 ./400.shtml ErrorDocument 401 ./400.shtml
+ErrorDocument 403 /400.shtml ErrorDocument 404 ./400.shtml ErrorDocument 500
+./400.shtml

@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /404.html
+Disallow: /application-form.html
+
+Sitemap: https://www.liahonafoundation.org/sitemap.xml

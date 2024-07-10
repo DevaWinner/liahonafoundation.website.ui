@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/username/public_html
+    - echo "Deploying static HTML/CSS project..."
+    - /bin/cp -r * $DEPLOYPATH/
+    - echo "Deployment complete."

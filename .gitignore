@@ -1,3 +1,7 @@
-node_modules/
-package.json
-package-lock.json
+# Ignore Visual Studio Code specific files
+.vscode
+.vscode/*
+
+# Ignore other common system files and folders
+.DS_Store
+Thumbs.db
